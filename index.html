@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  
+    <div class="container my-5">
+        
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <h3 class="my-3 text-center"><span class="badge badge-info">PinguCoder Courses</span></h3>
+
+                <form>
+                    <div class="input-group">
+                        <input required id="course" placeholder="Add new Course" type="text" class="form-control" >
+                        <div class="input-group-append">
+                            <input type="submit" class="btn btn-outline-secondary">
+                        </div>
+                    </div>
+                </form>
+        
+                <ul class="list-group mt-2">
+                   
+                </ul>
+            </div>
+        </div>
+
+    
+    </div>
+        <!-- // Import the functions you need from the SDKs you need -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        
+        <!-- // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries -->
+ 
+
+    <script>
+        // Your web app's Firebase configuration
+                const firebaseConfig = {
+            apiKey: "AIzaSyA8PmkKSv25_PbBWW_ClKMTW9lpsQqLWuk",
+            authDomain: "courses-493e3.firebaseapp.com",
+            projectId: "courses-493e3",
+            storageBucket: "courses-493e3.appspot.com",
+            messagingSenderId: "249501009233",
+            appId: "1:249501009233:web:c4209c2c34504244477f70"
+        };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>  
+    <script src="script.js"></script>
+</body>
+</html>
